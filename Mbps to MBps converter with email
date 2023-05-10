@@ -1,3 +1,10 @@
+file_size=float(input("Kindly enter the file size in Mbps\n"))
+#1 Mbps =  .125 MBps
+MBps = float(.125*file_size)
+message = f"The file size is {MBps}"
+print(message)
+
+
 import smtplib, ssl
 from email.mime.text import MIMEText
 
