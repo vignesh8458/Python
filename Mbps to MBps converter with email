@@ -1,1 +1,11 @@
-print ("hello")
+import smtplib, ssl
+from email.mime.text import MIMEText
+
+
+server = smtplib.SMTP(host='smtp.gmail.com', port='587')
+server.starttls()
+
+server.login(user="vignesh8458@gmail.com", password="ngsgvjacjnftwwbd")
+server.sendmail(from_addr="vignesh8458@gmail.com", to_addrs="vignesh8458@gmail.com", msg=message)
+
+print ("h")
