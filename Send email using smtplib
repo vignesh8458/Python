@@ -1,18 +1,20 @@
-file_size=float(input("Kindly enter the file size in Mbps\n"))
-#1 Mbps =  .125 MBps
-MBps = float(.125*file_size)
-message = f"The file size is {MBps}"
-print(message)
-
-
 import smtplib, ssl
 from email.mime.text import MIMEText
 
+speed=float(input("Kindly enter the Mbps value in Mbps\n"))
+#1 Mbps =  .125 MBps
+MBps = float(.125*speed)
+message = f"The MBps value is {MBps}, your Mbps value {speed}"
 
-server = smtplib.SMTP(host='smtp.gmail.com', port='587')
-server.starttls()
+
+
+server = smtplib.SMTP_SSL(host='smtp.gmail.com', port='465')
+
+
+a=["vignesh8458@gmail.com", "mdeepak1509@gmail.com"]
+
 
 server.login(user="vignesh8458@gmail.com", password="ngsgvjacjnftwwbd")
-server.sendmail(from_addr="vignesh8458@gmail.com", to_addrs="vignesh8458@gmail.com", msg=message)
+server.sendmail(from_addr="vignesh8458@gmail.com", to_addrs=a, msg=message)
 
-print ("h")
+print(message)
