@@ -5,15 +5,15 @@ from selenium.webdriver.edge.options import Options
 
 # URLs to open
 urls = [
-    "https://www.apple.com/",
-    "https://www.google.com/",
-    "https://netflix.com",
-    "https://amazon.in",
-    "https://flipkart.com",
-    "https://news.com",
-    "https://yahoo.com",
-    "https://propelinc.com",
-    "https://microsoft.com",
+    "https://www.site24x7.in/app/client#/home/noc-view",
+    "https://admin.microsoft.com/#/healthoverview",
+    "https://security.microsoft.com/homepage?tid=a8df62d0-eea9-44ce-b4a2-65baa6380fe4",
+    "https://security.microsoft.com/incidents?filters=%257B%257D&range=%257B%2522timeRangeType%2522%253A%2522180%2522%257D&tid=a8df62d0-eea9-44ce-b4a2-65baa6380fe4",
+    "https://endpoint.microsoft.com/#@propelinc.com/dashboard/private/14727706-e586-42ab-ba91-c19c0143987f",
+    "https://endpointcentral.manageengine.in/webclient#/uems/patch-mgmt/patches-dashboard",
+    "https://endpointcentral.manageengine.in/webclient#/uems/home/summary",
+    "https://support.propelinc.com/app/itdesk/HomePage.do",
+    "https://security.microsoft.com/quarantine?viewid=Email&tid=a8df62d0-eea9-44ce-b4a2-65baa6380fe4",
     # Add the other URLs here
 ]
 
