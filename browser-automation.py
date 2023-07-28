@@ -3,6 +3,8 @@ import keyboard
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 
+https://app.powerbi.com/groups/me/apps/2166c6b5-4caa-4754-a059-818f45a07ed0/dashboards/97d04200-e513-4e50-adac-57547293752b?language=en-US&experience=power-bi
+https://app.powerbi.com/groups/me/apps/bb540279-a3ba-4a9e-91ab-74ec3854e5fe/reports/b5829994-9ed6-4660-90ed-c46bcadd36fb/ReportSection4b34f5036922ed30394c?language=en-US&experience=power-bi
 # URLs to open
 urls = [
     "https://www.site24x7.in/app/client#/home/noc-view",
