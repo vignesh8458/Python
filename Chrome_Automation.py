@@ -47,18 +47,44 @@ try:
     # Press F11 to toggle full-screen mode
     #keyboard.press_and_release('F11')
     
-    # Loop through the tabs and refresh them every 5 seconds
+    # Keep track of the current tab index
+    current_tab_index = 0
+
     while True:
         # Get the number of open tabs
         num_tabs = len(driver.window_handles)
 
-        # Loop through each tab and refresh
+        # Loop through each tab
         for i in range(num_tabs):
             # Switch to the current tab
             driver.switch_to.window(driver.window_handles[i])
-            # Refresh the page
-            driver.refresh()
-            time.sleep(60)
+
+            # Refresh the tab if it's not the first tab
+            if current_tab_index > 0:
+                driver.refresh()
+
+            # Increment the tab index
+            current_tab_index += 1
+
+            # Reset the tab index when it reaches the end
+            if current_tab_index >= num_tabs:
+                current_tab_index = 0
+
+        # Wait for 60 seconds before refreshing again
+        time.sleep(60)
+
+except KeyboardInterrupt:
+    pass
+
+finally:
+    pass
+In this modified code, the current_tab_index keeps track of the current tab being processed. If the index is greater than 0 (i.e., not the first tab), the script will refresh the page. The index is then incremented, and if it reaches the end of the tab list, it is reset to 0. This way, only the first tab will not be refreshed, and the other tabs will be refreshed in a cyclic manner.
+
+
+
+
+
+
 
 except KeyboardInterrupt:
     # If you press Ctrl+C while the script is running, it will exit gracefully
