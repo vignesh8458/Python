@@ -17,7 +17,6 @@ urls = [
     "https://endpoint.microsoft.com/#@propelinc.com/dashboard/private/14727706-e586-42ab-ba91-c19c0143987f",
     "https://endpointcentral.manageengine.in/webclient#/uems/patch-mgmt/patches-dashboard",
     "https://endpointcentral.manageengine.in/webclient#/uems/home/summary",
-    "https://support.propelinc.com/app/itdesk/HomePage.do",
     "https://security.microsoft.com/quarantine?viewid=Email&tid=a8df62d0-eea9-44ce-b4a2-65baa6380fe4",
     # Add the other URLs here
 ]
