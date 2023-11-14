@@ -14,7 +14,7 @@ server = smtplib.SMTP_SSL(host='smtp.gmail.com', port='465')
 a=["vignesh8458@gmail.com", "mdeepak1509@gmail.com"]
 
 
-server.login(user="vignesh8458@gmail.com", password="ngsgvjacjnftwwbd")
+server.login(user="vignesh8458@gmail.com", password=" ")
 server.sendmail(from_addr="vignesh8458@gmail.com", to_addrs=a, msg=message)
 
 print(message)
